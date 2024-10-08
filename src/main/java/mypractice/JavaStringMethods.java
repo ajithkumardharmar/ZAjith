@@ -9,6 +9,8 @@ public class JavaStringMethods {
 		testContains();
 		System.out.println("\nexecuting testCopyValueOf() ");
 		testCopyValueOf();
+		System.out.println("\nexecuting testCopyValueOf() ");
+		testCopyValueOf();
 	}
 	public static void testCodePointAt(String n1,String n2) {
 		if(n1.codePointAt(0)<n2.codePointAt(0)) {
