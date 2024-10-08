@@ -9,8 +9,20 @@ public class JavaStringMethods {
 		testContains();
 		System.out.println("\nexecuting testCopyValueOf() ");
 		testCopyValueOf();
-		System.out.println("\nexecuting testCopyValueOf() ");
-		testCopyValueOf();
+		System.out.println("\nexecuting testIndexOf() ");
+		testIndexOf();
+		System.out.println("\nexecuting testLastIndexOf() ");
+		testLastIndexOf();
+	}
+	private static void testIndexOf() {
+		String myStr = "Ajith kumar kumar";
+		System.out.println(myStr.indexOf("kumar"));
+		
+	}
+	private static void testLastIndexOf() {
+		String myStr = "Ajith kumar kumar";
+	    System.out.println(myStr.lastIndexOf("kumar"));
+		
 	}
 	public static void testCodePointAt(String n1,String n2) {
 		if(n1.codePointAt(0)<n2.codePointAt(0)) {
