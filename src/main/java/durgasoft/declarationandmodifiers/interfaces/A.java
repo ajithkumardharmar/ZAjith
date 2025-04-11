@@ -11,5 +11,6 @@ class B implements InterfaceTest{
 	public static void main(String[] args) {
 		int  x= 15; // this is local variable not affect interface variable value
 		System.out.println(x);
+		
 	}
 }

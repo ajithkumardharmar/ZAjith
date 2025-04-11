@@ -3,11 +3,15 @@ package durgasoft.declarationandmodifiers;
 public abstract class AbstractMethodExample {
 	//we can define method without implementation and child class must implement abstract method
 	public abstract int getNoOfWheels();
+	
+	
+	public void m1() {
+		System.out.print("sdfwe");
+	}
 }
 
 
 class Bus extends AbstractMethodExample{
-
 	@Override
 	public int getNoOfWheels() {
 		// TODO Auto-generated method stub
