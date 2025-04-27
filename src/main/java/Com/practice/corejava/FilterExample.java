@@ -44,6 +44,7 @@ public class FilterExample {
 		productList.add(new Product(1, "Samsung", 39000));
 		productList.add(new Product(1, "Redmi note 12", 29000));
 		
+		
 		List <String> productNameList = productList.stream().filter(e -> e.getProductName()
 				.startsWith("A")).map(Product::getProductName).toList();
 		System.out.println(productNameList);
