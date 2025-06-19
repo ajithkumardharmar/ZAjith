@@ -28,6 +28,7 @@ public class MiddleOfLinkedList{
 		while(fast!=null && fast.next!=null){
 			slow = slow.next;
 			fast = fast.next.next;
+			System.out.println(slow.data+" "+fast.data );
 		}
 		return slow;
 	}
