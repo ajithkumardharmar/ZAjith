@@ -6,8 +6,8 @@ import java.util.jar.*;
 public class ManifestUpdater {
     public static void main(String[] args) {
         // Specify the JAR file to update and the updated JAR file
-        String inputJarPath = "D:/AGENT/APPD_INSTALL_PATH/ReformIdToNamePopupExpression.jar";  // Existing JAR file
-        String outputJarPath = "D:/AGENT/APPD_INSTALL_PATH/ReformIdToNamePopupExpressionUpdate.jar"; // New JAR with updated manifest
+        String inputJarPath = "D:/AGENT/APPD_INSTALL_PATH/ReformIdToNamePopupLines.jar";  // Existing JAR file
+        String outputJarPath = "D:/AGENT/APPD_INSTALL_PATH/ReformIdToNamePopupLinesUpdate.jar"; // New JAR with updated manifest
 
         try (JarFile jarFile = new JarFile(inputJarPath)) {
             // Read the existing manifest
@@ -23,7 +23,7 @@ public class ManifestUpdater {
             String classPath = attributes.getValue("Class-Path");
             if (classPath != null) {
                 // Replace ReformReporterTemplate_lib with lib
-                classPath = classPath.replace("ReformIdToNamePopupExpression_lib", "lib");
+                classPath = classPath.replace("ReformIdToNamePopupLines_lib", "lib");
                 attributes.putValue("Class-Path", classPath);
             }
             // Write the updated JAR
